@@ -1,0 +1,32 @@
+table{
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+     th, td {
+        height: 50px;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    .recreo {
+        text-align: center;  
+        vertical-align: middle;  
+        height: 50px;  
+    }
+    .verde {
+        background-color: lightgreen;
+    }
+    .amarillo {
+        background-color: yellow;
+    }
+    .naranja {
+        background-color: orange;
+    }
+    .violeta {
+        background-color: violet;
+    }
+    .salmon {
+        background-color: salmon;
+    }
+
