@@ -1,0 +1,54 @@
+*{
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    background-color: darkslateblue;
+    color: white;
+}
+header{
+    margin: 0;
+    background-color:black; 
+    height: 10vh;
+}
+nav{
+    margin:0;
+    background-color:goldenrod;
+    height: 5vh;
+}
+a{
+    margin:0;
+}
+div{
+    margin: 0;
+}
+section{
+    margin: 0;
+    background-color: orange;
+    height: 70vh;
+    width: 80%;
+    float: left;
+}
+.articulo1{
+    margin: 0;
+    background-color: green;
+    height: 35vh;
+}
+.articulo2{
+    margin: 0;
+    background-color: darkmagenta;
+    height: 35vh;
+}
+aside{
+    margin: 0;
+    background-color: grey; 
+    height: 70vh;
+    width: 20%;
+    float: left;
+}
+footer{
+    margin: 0;
+    background-color:rgb(103, 36, 12);
+    height: 15vh;
+    clear: both;
+}
