@@ -1,5 +1,10 @@
 *{
     font-size: 20px;
+        font-family: 'Ruge_Boogie';
+}
+@font-face {
+    font-family: 'Ruge_Boogie';
+    src: url('/style/RugeBoogie-Regular.ttf') format('truetype');
 }
 body{
     margin: 0;
