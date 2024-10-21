@@ -56,8 +56,14 @@ display: flex;
 justify-content: space-between; // Distribuye el espacio de manera uniforme entre los elementos 
 }
 */
-header{
-    background-color: #333333;
+
+.wrapper.row1{
+  background-color: #333333;
+}
+
+header{    
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -65,11 +71,35 @@ header ul{
     display: flex;
 }
 h1{
-    margin: 0;
+    margin: 0;    
+  }
+#container{
+  max-width: 960px;
+  margin: 0 auto;
 }
 a{
-    color: #a3a3a3;
+  color: #a3a3a3;
+  margin: 0 auto;
 }
-
-
-
+footer p{
+  background-color:  #333333;
+  margin-bottom: 0 auto;
+  text-align: center;
+}
+figure{
+  margin: 0 auto;
+}
+#homepage{
+  max-width: 960px;
+  margin: 0 auto;
+}
+section{
+  display: flex;
+}
+#copyright{
+  max-width: 960px;
+  margin: 0 auto;
+}
+figure{
+  padding: 0;
+}
