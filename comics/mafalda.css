@@ -1,0 +1,48 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.viñeta{
+    display: inline-block;
+    background-color: rgb(180, 180, 180);
+    width: 100%;
+}
+img{
+    margin: 0;
+    width: 500px;
+}
+.fila{
+    display: flex;
+}
+
+
+/*ANIMACIONES*/
+
+.viñeta .fila .img1:hover{
+    width: 400px;
+    transition: width 2s;
+}
+.viñeta .fila .img2:hover{
+   opacity: 0;
+   transition: opacity 2s;
+}
+.viñeta .fila .img3{
+    position: relative;
+ }
+.viñeta .fila .img3{
+    position: absolute;
+    left: 1000px;
+    transition: left ease-in 3s;
+ }
+ .viñeta .fila .img3:hover{
+    left: 1500px;
+ }
+
+ /*
+ Aplicar 1 que haga todas las transiciones que llevamos
+ Movimiento de arriba a abajo
+ Que se mueva realizando una curva hacia la derecha y con una curva
+ */
+
