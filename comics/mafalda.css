@@ -31,14 +31,47 @@ img{
 .viñeta .fila .img3{
     position: relative;
  }
-.viñeta .fila .img3{
-    position: absolute;
-    left: 1000px;
-    transition: left ease-in 3s;
- }
- .viñeta .fila .img3:hover{
-    left: 1500px;
- }
+ .viñeta .fila .img3 {
+    position: relative;
+    left: 0; /* Posición inicial, alineada con las otras imágenes */
+    transition: left 3s ease-in;
+}
+
+.viñeta .fila .img3:hover {
+    left: 1500px; /* Mueve la imagen a la derecha cuando se pasa el ratón por encima */
+}
+
+.viñeta .fila .img4 {
+    position: relative;
+    width: 500px;
+    opacity: 1;
+    left: 0; 
+    transition: width 2s, opacity 2s, left 3s ease-in;
+}
+
+.viñeta .fila .img4:hover {
+    width: 400px; 
+    opacity: 0;   
+    left: 1500px;  
+}
+.viñeta .fila .img5 {
+    position: relative;
+    top: 0; 
+    transition: top 3s ease-in; 
+}
+
+.viñeta .fila .img5:hover {
+    top: 500px; 
+}
+
+.viñeta .fila .img6 {
+    position: relative; /* Necesario para que funcione transform */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.viñeta .fila .img6:hover {
+    transform: translate(100px, 100px); /* Mueve la imagen 100px a la derecha y 100px hacia abajo */
+}
 
  /*
  Aplicar 1 que haga todas las transiciones que llevamos
