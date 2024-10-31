@@ -16,27 +16,45 @@
 </head>
 <body>
     <div id="casa">
-        <div><img id="marcoizq" src="img/izq.png"></div>
-        <div><img id="marcoder" src="img/der.png"></div>
-        <div><img id="nombrei" src="img/nombre.png"></div>
-        <div><img id="nombred" src="img/nombre.png"></div>
-        <div><img id="fantasma" src="img/ghost.gif"></div>
-        <div><img id="puerta" src="img/puerta.png" alt=""></div>
-        <div><img id="luna" src="img/luna.png"></div>
-        <div><img id="ojoizq" src="img/ojoizq.png"></div>
-        <div><img id="ojomed" src="img/ojomed.png"></div>
-        <div><img id="ojoder" src="img/ojoDerecha.png"></div>
-        <div><img id="murc1" src="img/murc1.png"></div>
-        <div><img id="murc2" src="img/murc2.png"></div>
-        <div><img id="murc3" src="img/murc3.png"></div>
-        <div><img id="murc4" src="img/murc4.png"></div>
-        <div><img id="murc5" src="img/murc5.png"></div>
-        <div><img id="murc6" src="img/murc6.png"></div>
-        <div><img id="murc7" src="img/murc7.png"></div>
-        <div><img id="bruja" src="img/bruja.gif"></div>
-        <div><img id="bruja2" src="img/bruja.gif"></div>
-        <div><img id="bruja3" src="img/bruja.gif"></div>
-        <div><img id="nube1" src="img/nube1.png"></div>
-        <div><img id="nube2" src="img/nube2.png"></div>
+        <div><img id="marcoizq" src="img/izq.png"alt="marcoizquierdo"></div>
+        <div><img id="marcoder" src="img/der.png"alt="marcoderecho"></div>
+        <div><img id="nombrei" src="img/nombre.png"alt="iniciales"></div>
+        <div><img id="nombred" src="img/nombre.png"alt="iniciales"></div>
+        <div><img id="fantasma" src="img/ghost.gif"alt="fantasmagif"></div>
+        <div><img id="puerta" src="img/puerta.png"alt="puerta"></div>
+        <div><img id="luna" src="img/luna.png"alt="luna"></div>
+        <div><img id="ojoizq" src="img/ojoizq.png"alt="ojoizquierdo"></div>
+        <div><img id="ojomed" src="img/ojomed.png"alt="ojomedio"></div>
+        <div><img id="ojoder" src="img/ojoDerecha.png"alt="ojoderecha"></div>
+        <div><img id="murc1" src="img/murc1.png"alt="murcielago1"></div>
+        <div><img id="murc2" src="img/murc2.png"alt="murcielago2"></div>
+        <div><img id="murc3" src="img/murc3.png"alt="murcielago3"></div>
+        <div><img id="murc4" src="img/murc4.png"alt="murcielago4"></div>
+        <div><img id="murc5" src="img/murc5.png"alt="murcielago5"></div>
+        <div><img id="murc6" src="img/murc6.png"alt="murcielago6"></div>
+        <div><img id="murc7" src="img/murc7.png"alt="murcielago7"></div>
+        <div><img id="bruja" src="img/bruja.gif"alt="bruja1"></div>
+        <div><img id="bruja2" src="img/bruja.gif"alt="bruja2"></div>
+        <div><img id="bruja3" src="img/bruja.gif"alt="bruja3"></div>
+        <div><img id="nube1" src="img/nube1.png"alt="nube1"></div>
+        <div><img id="nube2" src="img/nube2.png"alt="nube2"></div>
+        <div><img id="buho" src="img/buho.gif" alt="buho"></div>
+
+        <audio id="ruidobuho" src="musica/owls-241046.mp3"></audio>
+
+        <script>
+            const imagen = document.getElementById('buho');
+            const audio = document.getElementById('ruidobuho');
+        
+            imagen.addEventListener('mouseover', () => {
+                audio.play();
+            });
+        
+            imagen.addEventListener('mouseout', () => {
+                audio.pause();
+                audio.currentTime = 0; 
+            });
+        </script>
 </body>
+
 </html>

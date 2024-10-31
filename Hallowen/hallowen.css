@@ -15,9 +15,14 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    position: relative; /* Para ubicar los elementos internos */
+    position: relative;
 }
-
+#buho{
+    position: absolute;
+    height: 15vh;
+    left: 82%;
+    top: 47.3vh;
+}
 #luna {
     position: absolute;
     height: 15vh;
@@ -56,7 +61,19 @@ body {
     position: absolute;
     height:43px;
     left: 25%;
-    top: 82vh;
+    top: 81vh;
+}
+#nube1{
+    position: absolute;
+    height: 26vh;
+    left: 28.4%;
+    top: 7vb;
+}
+#nube2{
+    position: absolute;
+    height:43px;
+    left: 35%;
+    top: 21vh;
 }
 #puerta{    
     position: absolute;
@@ -70,27 +87,27 @@ body {
     height: 2vh;
     left: 33.1vh;
     top: 87vh;
-    transition: transform 3s ease;
+    transition: transform 1s ease;
 }
 #ojomed{
     position: absolute;
     height: 3vh;
     left: 27%;
     top: 92svh;
-    transition: transform 2s ease;
+    transition: transform 1s ease;
 }
 #ojoder{
     position: absolute;
     height: 4vh;
     left: 82%;
     top: 85.3vh;
-    transition: transform 3s ease;
+    transition: transform 1s ease;
 }
 #murc1,#murc2,#murc3,#murc4,#murc5,#murc6,#murc7{
     position: absolute;
     height: 23px;
 }
-/* Añadimos animaciones a los murciélagos */
+
 #murc1 {
     left: 28%;
     top: 5.6vh;
@@ -150,6 +167,10 @@ body {
     opacity: 1;
     transition: transform 6s , opacity 1s ease-in 3s;
 }
+#nube1:hover{
+    opacity: 0;
+    transition: opacity 2s;
+ }
 #casa:hover #bruja {
     transform: translateX(-10vw) translateY(-20vh);
     opacity: 0; 
@@ -197,7 +218,6 @@ body {
     top: 8vh;
 }
 
-/* Animación de rotación luna */
 #luna:hover {
     transform: translateX(-50%) rotate(30deg);
 }

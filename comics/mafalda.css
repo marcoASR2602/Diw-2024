@@ -16,10 +16,7 @@ img{
 .fila{
     display: flex;
 }
-
-
 /*ANIMACIONES*/
-
 .viñeta .fila .img1:hover{
     width: 400px;
     transition: width 2s;
@@ -33,12 +30,12 @@ img{
  }
  .viñeta .fila .img3 {
     position: relative;
-    left: 0; /* Posición inicial, alineada con las otras imágenes */
+    left: 0;
     transition: left 3s ease-in;
 }
 
 .viñeta .fila .img3:hover {
-    left: 1500px; /* Mueve la imagen a la derecha cuando se pasa el ratón por encima */
+    left: 1500px; 
 }
 
 .viñeta .fila .img4 {
