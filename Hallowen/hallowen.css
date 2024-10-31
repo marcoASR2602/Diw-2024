@@ -58,7 +58,7 @@ body {
     left: 25%;
     top: 78.6vh;
 }
-#puerta{
+#puerta{    
     position: absolute;
     height: 15vh;
     left: 46.5vh;
@@ -86,19 +86,39 @@ body {
     top: 85.3vh;
     transition: transform 3s ease;
 }
-
-#murc1{
+#murc1,#murc2,#murc3,#murc4,#murc5,#murc6,#murc7{
     position: absolute;
-    height:23px;
-    left: 22%;
-    top: 15.6vh;
+    height: 23px;
+}
+#murc1{
+    left: 28%;
+    top: 5.6vh;
 }
 #murc2{
-    position: absolute;
-    height:23px;
     left: 35%;
-    top: 15 .6vh;
+    top: 9.6vh;
 }
+#murc3{
+    left: 45%;
+    top: 6.6vh;
+}
+#murc4{
+    left: 47%;
+    top: 24.6vh;
+}
+#murc5{
+    left: 47%;
+    top: 55.6vh;
+}
+#murc6{
+    left: 40%;
+    top:  55.6vh;
+}
+#murc7{
+    left: 40%;
+    top: 6.5vh;
+}
+
 /* Animación de rotación luna */
 #luna:hover {
     transform: translateX(-50%) rotate(30deg);
