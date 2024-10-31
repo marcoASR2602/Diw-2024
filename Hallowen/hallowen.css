@@ -56,7 +56,7 @@ body {
     position: absolute;
     height:43px;
     left: 25%;
-    top: 78.6vh;
+    top: 82vh;
 }
 #puerta{    
     position: absolute;
@@ -90,33 +90,111 @@ body {
     position: absolute;
     height: 23px;
 }
-#murc1{
+/* Añadimos animaciones a los murciélagos */
+#murc1 {
     left: 28%;
     top: 5.6vh;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
-#murc2{
+#murc2 {
     left: 35%;
     top: 9.6vh;
+    transition: transform 1.5s ease, opacity 1.5s ease;
 }
-#murc3{
+#murc3 {
     left: 45%;
     top: 6.6vh;
+    transition: transform 2s ease-in, top 1.5s ease-out;
 }
-#murc4{
+#murc4 {
     left: 47%;
     top: 24.6vh;
+    transition: transform 1.8s ease, left 1s ease;
 }
-#murc5{
+#murc5 {
     left: 47%;
     top: 55.6vh;
+    transition: transform 2.5s ease-in-out, opacity 1s ease;
 }
-#murc6{
+#murc6 {
     left: 40%;
-    top:  55.6vh;
+    top: 55.6vh;
+    transition: top 1s ease-in, transform 2s ease-out;
 }
-#murc7{
+#murc7 {
     left: 40%;
     top: 6.5vh;
+    transition: transform 1.5s ease-in-out, top 2s ease;
+}
+#bruja {
+    position: absolute;
+    height: 53px;
+    right: 15%; 
+    top: 20vh; 
+    opacity: 1;
+    transition: transform 4s, opacity 1s ease-in 2s;
+}
+#bruja2 {
+    position: absolute;
+    height: 53px;
+    right: 13%; 
+    top: 24vh; 
+    opacity: 1;
+    transition: transform 5s, opacity 1s ease-in 2.5s;
+}
+#bruja3 {
+    position: absolute;
+    height: 53px;
+    right: 17%; 
+    top: 24vh; 
+    opacity: 1;
+    transition: transform 6s , opacity 1s ease-in 3s;
+}
+#casa:hover #bruja {
+    transform: translateX(-10vw) translateY(-20vh);
+    opacity: 0; 
+}
+#casa:hover #bruja2 {
+    transform: translateX(-10vw) translateY(-20vh);
+    opacity: 0; 
+}
+#casa:hover #bruja3 {
+    transform: translateX(-10vw) translateY(-20vh);
+    opacity: 0; 
+}
+#casa:hover #murc1 {
+    transform: translateX(10px) rotate(20deg);
+    opacity: 0.8;
+}
+
+#casa:hover #murc2 {
+    transform: translateY(10px) scale(1.1);
+    opacity: 0.9;
+}
+
+#casa:hover #murc3 {
+    transform: translateX(-15px) rotate(-15deg);
+    top: 10vh;
+}
+
+#casa:hover #murc4 {
+    transform: translateY(-10px) scale(1.2);
+    left: 50%;
+}
+
+#casa:hover #murc5 {
+    transform: translateX(5px) rotate(15deg);
+    opacity: 0.7;
+}
+
+#casa:hover #murc6 {
+    top: 53vh;
+    transform: translateX(-10px) scale(1.05);
+}
+
+#casa:hover #murc7 {
+    transform: translateY(15px) rotate(-10deg);
+    top: 8vh;
 }
 
 /* Animación de rotación luna */
