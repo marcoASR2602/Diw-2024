@@ -31,7 +31,12 @@ body {
     transition: transform 0.3s ease;
     transform: translateX(-50%);
 }
-
+#spider{
+    position: absolute;
+    height:32px;
+    left: 15vw;
+    top:15vh;
+}
 #marcoizq {
     position: absolute;
     height: 100vh;
@@ -62,6 +67,18 @@ body {
     height:43px;
     left: 25%;
     top: 81vh;
+}
+#ventana{
+    position: absolute;
+    height: 5vh;
+    left: 29vb;
+    top: 32.51vb
+}
+#lobo{
+    position: absolute;
+    height: 3vh;
+    left: 16%;
+    top: 34vb
 }
 #nube1{
     position: absolute;
@@ -171,6 +188,10 @@ body {
     opacity: 0;
     transition: opacity 2s;
  }
+ #ventana:hover{
+    opacity: 0;
+    transition: opacity 1s;
+ }
 #casa:hover #bruja {
     transform: translateX(-10vw) translateY(-20vh);
     opacity: 0; 
@@ -239,3 +260,4 @@ body:hover #ojoder{
 #puerta:hover{
     opacity: 0;
 }
+

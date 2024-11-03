@@ -39,8 +39,11 @@
         <div><img id="nube1" src="img/nube1.png"alt="nube1"></div>
         <div><img id="nube2" src="img/nube2.png"alt="nube2"></div>
         <div><img id="buho" src="img/buho.gif" alt="buho"></div>
-
+        <div><img id="lobo" src="img/lobo.png" alt="lobo"></div>
+        <div><img id="ventana" src="img/ventanaredonda.png" alt="ventana"></div>
+        <div><img id="spider" src="img/araña.png" alt="araña"></div>
         <audio id="ruidobuho" src="musica/owls-241046.mp3"></audio>
+        <audio id="ruidolobo" src="musica/001083336_prev.mp3"></audio>
 
         <script>
             const imagen = document.getElementById('buho');
@@ -53,6 +56,17 @@
             imagen.addEventListener('mouseout', () => {
                 audio.pause();
                 audio.currentTime = 0; 
+            });
+            const lobo = document.getElementById('ventana');
+            const sonidoLobo = document.getElementById('ruidolobo');
+
+            lobo.addEventListener('mouseover', () => {
+                sonidoLobo.play();
+            });
+
+            lobo.addEventListener('mouseout', () => {
+                sonidoLobo.pause();
+                sonidoLobo.currentTime = 0;
             });
         </script>
 </body>
