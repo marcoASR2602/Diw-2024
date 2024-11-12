@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+#fondo{
+    background-color: deepskyblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#suelo{
+    background-color: forestgreen;
+    height: 30vh;
+    width: 100%;
+}
+#coche{
+    position: absolute;
+    top: 420px;
+    left: 0px;
+    animation:  move 4s;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+#muro1{
+    position: absolute;
+    top: 295px;
+    left: 492px;
+    z-index: 0;
+}
+#muro2{
+    position: absolute;
+    top: 305px;
+    left: 505px;
+    z-index: 2;
+}
+#humo{
+    position: absolute;
+    top: 305px;
+    left: 505px;
+    z-index: 2;
+}
+#muro img{
+    width: 350px;
+}
+
+#coche img{
+    width: 350px;
+}
+@keyframes move {
+    from { left: 0; }
+    to { left: 900px; }
+}
