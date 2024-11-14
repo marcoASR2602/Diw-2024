@@ -1,9 +1,9 @@
 body{
     margin: 0;
+    background-image: url(/animaciones/imagenes/cielo.jpg);
 }
 
 #fondo{
-    background-color: deepskyblue;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,12 +13,37 @@ body{
     background-color: forestgreen;
     height: 30vh;
     width: 100%;
+    z-index: 1;
 }
+#sol{
+    position: absolute; 
+    top: 10px;
+    border-radius: 100%;
+    left: 1400px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: color;
+    animation-duration: 4s;
+}
+/*
+    -Emepezamos con un coche que va de izquierda a la derecha.
+    -Atraviesa un muro y aparece haciendo algun efecto de humo y escombros
+    y se choca contra un edificio al llegar a la derecha.
+    -Aparece en llamas en el impacto sobre el edificio y el coche sufre algun desperfecto.
+    -Hay Sonido y tenéis que obligar al usuario a interectuar con el usuario.
+    -Hay pajaros volando por el cielo y aparecen digglets o topos en la tierra de manera infinitos en varios sitios.
+*/
 #coche{
     position: absolute;
-    top: 420px;
+    top: 485px;
     left: 0px;
-    animation:  move 4s;
+    animation-name:  move;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+    /*animation-fill-mode: forwards; Esto hace que la animacion termine en el estado final es decir no se mueva al principio */
+    animation-timing-function: ease-in;
+    /*animation-iteration-count: 5;*/
     transform: rotateY(180deg);
     z-index: 1;
 }
@@ -28,26 +53,143 @@ body{
     left: 492px;
     z-index: 0;
 }
+#entorno{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 #muro2{
     position: absolute;
     top: 305px;
     left: 505px;
     z-index: 2;
 }
+#entorno #pokemon{
+    left: 1200px;
+    top: 563px;
+    width:  70px;
+    z-index: 0;
+    position: absolute;
+    animation-name:  pokem;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+#entorno #pokemon2{
+    top: 563px;
+    z-index: 0;
+    position: absolute;
+    left: 500px;
+    width:  70px;
+    animation-name:  pokem;
+    animation-duration: 7s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+#entorno #pokemon3{
+    top: 563px;
+    z-index: 0;
+    position: absolute;
+    left: 900px;
+    width:  70px;
+    animation-name:  pokem;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+#entorno #pokemon4{
+    top: 563px;
+    z-index: 0;
+    position: absolute;
+    left: 400px;
+    width:  70px;
+    animation-name:  pokem;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+#entorno #pokemon5{
+    top: 563px;
+    z-index: 0;
+    position: absolute;
+    left: 200px;
+    width:  70px;
+    animation-name:  pokem;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+#entorno #pajaro{
+    position: absolute;
+    left: 200px;
+    top: 90px;
+    z-index: 0;  
+    width:  70px;
+    transform: scaleX(-1);
+}
+
+#entorno #pajaro2{
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    z-index: 0;  
+    width:  70px;
+    transform: scaleX(-1);
+}
+
+#entorno #pajaro3{
+    position: absolute;
+    left: 800px;
+    top: 90px;
+    z-index: 0;  
+    width:  70px;
+}
+
+#entorno #pajaro4{
+    position: absolute;
+    top: 70px;
+    left: 840px;
+    z-index: 0;  
+    width:  70px;
+}
+#entorno #pajaro5{
+    position: absolute;
+    left: 760px;
+    top: 70px;
+    z-index: 0;  
+    width:  70px;
+}
+
 #humo{
     position: absolute;
     top: 305px;
     left: 505px;
     z-index: 2;
+    
 }
 #muro img{
     width: 350px;
 }
 
 #coche img{
-    width: 350px;
+    width: 200px;
+}
+@keyframes pokem {
+    0%  { top: 563px; }
+    50%  { top: 540px; }
+    100%  { top: 563px; }
 }
 @keyframes move {
-    from { left: 0; }
-    to { left: 900px; }
+    0% { left: 0; }
+    35% { left: 450px; }
+    37% { left: 455px;} 
+    50% { left: 1000px; }
+    100% { left: 1200px; }
 }
+@keyframes color {
+    0%   {background-color: yellow;}
+    30%  {background-color: green;}
+    50%  {background-color: blue;}
+    100% {background-color: red;}
+  }

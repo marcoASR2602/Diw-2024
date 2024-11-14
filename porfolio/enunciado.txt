@@ -1,0 +1,8 @@
+DISEÑO WEB UI UX:
+Coger 3 distintos que encuentre
+Un portfolio con 4 páginas:
+Transicciones.
+1-Resumen con datos personales(Home)
+2-Proyectos
+3-Formación
+4-Vosotros
