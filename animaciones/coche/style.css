@@ -41,10 +41,10 @@ body{
     animation-name:  move;
     animation-duration: 6s;
     animation-delay: 0.5s;
+    transform: rotateY(180deg);
     /*animation-fill-mode: forwards; Esto hace que la animacion termine en el estado final es decir no se mueva al principio */
     animation-timing-function: ease-in;
     /*animation-iteration-count: 5;*/
-    transform: rotateY(180deg);
     z-index: 1;
 }
 #muro1{
@@ -163,10 +163,47 @@ body{
 
 #humo{
     position: absolute;
-    top: 305px;
-    left: 505px;
-    z-index: 2;
-    
+    top: 205px;
+    left: 490px;
+    z-index: 3;
+    animation-name:  humo;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+#fuego{
+    position: absolute;
+    top: 350px;
+    left: 900px;
+    z-index: 3;
+    opacity: 0;
+    animation-name: explosion;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+#humo2{
+    position: absolute;
+    top: 245px;
+    left: 450px;
+    z-index: 3;
+    animation-name:  humo;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+#humo3{
+    position: absolute;
+    top: 255px;
+    left: 530px;
+    z-index: 3;
+    animation-name:  humo;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
 }
 #muro img{
     width: 350px;
@@ -175,21 +212,40 @@ body{
 #coche img{
     width: 200px;
 }
+
+body:hover{
+    background-image: url(/animaciones/imagenes/Hospital.jpg);
+}
+
 @keyframes pokem {
     0%  { top: 563px; }
     50%  { top: 540px; }
     100%  { top: 563px; }
 }
 @keyframes move {
-    0% { left: 0; }
-    35% { left: 450px; }
-    37% { left: 455px;} 
-    50% { left: 1000px; }
-    100% { left: 1200px; }
+    0% { left: 0;  transform: rotateY(180deg); opacity: 1;}
+    35% { left: 450px;   transform: rotateY(180deg); opacity: 1;}
+    37% { left: 455px;   transform: rotateY(180deg); transform: rotate(2turn); opacity: 1;} 
+    49% { left: 1000px;  transform: rotateY(180deg); opacity: 0;}
+    99% { left: 1090px; transform: rotateY(180deg);opacity: 0;}
+    100%{ left: 1200px; opacity: 0;}
 }
 @keyframes color {
     0%   {background-color: yellow;}
     30%  {background-color: green;}
     50%  {background-color: blue;}
     100% {background-color: red;}
-  }
+}
+@keyframes humo{
+    0% {opacity: 0;}
+    53% {opacity: 0;}
+    55% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes explosion{
+    0% {opacity: 0;}
+    53% {opacity: 0;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+}
