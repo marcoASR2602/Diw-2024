@@ -28,6 +28,7 @@
             <img id="humo2" src="/animaciones/imagenes/humo.gif"> 
             <img id="humo3" src="/animaciones/imagenes/humo.gif"> 
             <img id="fuego" src="/animaciones/imagenes/fuego.gif"> 
+            <img id="edificio" src="/animaciones/imagenes/skyscraper-building-cartoon-style-free-png.webp" alt="">
         </div>
         <div id="muro">
             <img id="muro2" src="/animaciones/imagenes/muro.png" alt="muro">
@@ -37,5 +38,22 @@
         <div id="suelo">
         </div>
     </div>
+    <audio id="audio" src="/animaciones/musica/ambulance-6399.mp3"></audio>
+    <audio id="audio2" src="/animaciones/musica/sound-effects-man-screaming-02-247128.mp3"></audio>
+    <script>
+        // Al cargar la página, después de 5 segundos, reproducir el grito
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const audio2 = document.getElementById('audio2');
+                audio2.play(); 
+            }, 5000); 
+        });
+        
+        const imagen = document.getElementById('coche');
+        const audio = document.getElementById('audio');
+        imagen.addEventListener('click', function() {
+            audio.play(); 
+        });
+    </script>
 </body>
 </html>
