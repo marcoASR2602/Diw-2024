@@ -13,24 +13,174 @@ body {
     background-size: cover; 
     background-position: center;
 }
-#nave1{
-    position: relative;
+
+
+#nave1 {
+    position: absolute;
     width: 2vw; 
     top: 20vh;
-    left: 90vh;
+    left: 55vh;
+    animation-name: move2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    offset-path: path('M 12 82 C 82 12, 132 12, 192 82 S 302 152, 362 82');
+    transform: rotateY(180deg);
 }
-#nave2{
-    position: relative;
+#nave3 {
+    position: absolute;
     width: 2vw; 
     top: 20vh;
-    left: 95vh;
+    left: 55vh;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    offset-path: path('M 12 82 C 82 12, 132 12, 192 82 S 302 152, 362 82');
+    transform: rotateY(180deg);
+}
+#nave2 {
+    position: absolute;
+    width: 2vw; 
+    top: 17vh;
+    left: 65vh;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    offset-path: path('M 10 80 C 80 10, 130 10, 190 80 S 300 150, 360 80');
+    transform: rotateY(180deg);
+    offset-distance: -5%; 
 }
 
-@keyframes vuelo {
-    from {
-        transform: translateX(0);
+#palanca{
+    width: 10vh;
+    position: absolute;
+    left: 80vh;
+    top: 94vh;
+}
+#palanca2{
+    width: 5vh;
+    position: absolute;
+    left: 80vh;
+    transform: rotateY(180deg);
+    top: 86vh;
+}
+#palanca2:hover{
+    width: 5vh;
+    transform: rotateY(0deg);
+    position: absolute;
+    left: 85vh;
+    top: 86vh;
+}
+
+#planeta1,#planeta2,#planeta3{
+    position: absolute;
+    z-index: 0;
+}
+
+#planeta1{
+    width: 10vh;
+    top: 45vh;
+    left: 160vh;
+}
+
+#planeta2{
+    width: 4vh;
+    top: 5vh;
+    left: 20vh;
+}
+
+#planeta3{
+    width: 2.5vh;
+    top: 10vh;
+    left: 100vh;
+}
+
+#satelite{
+    position: relative;
+    width: 5vh;
+    top: 47vh;
+    left: 163vh;
+    animation: girar 2s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+@keyframes move2 {
+    0% {
+        offset-distance: 0%;
+    }
+    75%{
+        opacity: 1;
+    }
+    76%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        offset-distance: 100%;
+    }
+}
+@keyframes palanca {
+    from { 
+        transform: rotate(0deg)  translate(-80px) rotate(0deg); 
     }
     to {
-        transform: translateX(-120vw); 
+         transform: rotate(180deg) translate(-80px) rotate(-360deg);
+    }
+}
+@keyframes girar {
+    from { 
+        transform: rotate(0deg)  translate(-80px) rotate(0deg); 
+    }
+    to {
+         transform: rotate(360deg) translate(-80px) rotate(-360deg);
+    }
+}
+@keyframes vuelo {
+    0%{
+        transform: translateX(15px);
+    }
+
+    50%{
+        transform: translate(-105px,-100px);
+    }
+    70%{
+        transform: translate(-205px,100px);
+    }
+    100%{
+        transform: translateX(-505px);
+
+    }
+}
+
+@keyframes vuelo2 {
+    0%{
+        transform: translateX(15px);
+    }
+
+    50%{
+        transform: translate(-105px,-100px);
+    }
+    70%{
+        transform: translate(-205px,100px);
+    }
+    90%{
+        opacity: 1;
+    }
+    91%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-505px);
+
     }
 }
