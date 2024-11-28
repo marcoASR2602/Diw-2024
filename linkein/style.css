@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ed;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    color: rgb(85, 83, 83);
+}
+
+.navbar .logo img {
+    height: 30px;
+}
+
+.perfil {
+    width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("/linkein/img/header.jpg");
+    color: white;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+
+.profile-info .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+section {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.trabajo, .education p {
+    margin-bottom: 15px;
+}
+
+.trabajo h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f3f2ef;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0073b1;
+    margin: 0 5px;
+}
