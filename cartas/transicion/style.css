@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("/cartas/transicion/img/fondo4.jpg");
+}
+
+.baraja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.cartas1{
+    display: flex;
+}
+.cartas2{
+    display: flex;
+}
+.carta{
+    width:  250px;
+    height: 348px;
+}
+.carta div{
+    width:  250px;
+    height: 348px;
+    background-size: contain;
+    position: absolute;
+}
+
+
+
+.reverso{
+    background-image: url("img/back.png");
+}
+
+.pokemon1 .anverso{
+    background-image: url("img/blastoise.png");
+}
+
+.pokemon2 .anverso{
+    background-image: url("img/original.png");
+}
+.pokemon3 .anverso{
+    background-image: url("img/dragonite.png");
+}
+.pokemon4 .anverso{
+    background-image: url("img/charizar.png");
+}
+.pokemon5 .anverso{
+    background-image: url("img/Pikachu.png");
+}
+.pokemon6 .anverso{
+    background-image: url("img/Gengar.png");
+}
+.pokemon7 .anverso{
+    background-image: url("img/Melmetal.png");
+}
+
+.pokemon8 .anverso{
+    background-image: url("img/bulbasaur.png");
+}
+
+
+
+.carta div{
+    transition: all 1s;
+}
+.carta .anverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.carta .reverso{
+    z-index: 10;
+    transform: rotateY(0deg);
+}
+
+.carta:hover .anverso{
+    z-index: 10;
+    transform: rotateY(0deg);
+}
+.carta:hover .reverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+}
