@@ -7,11 +7,13 @@ body {
 }
 
 #fondo {
+    position: absolute;
     background-image: url("/animaciones/imagenes/Background.png");
     height: 100vh; 
     width: 100vw; 
     background-size: cover; 
     background-position: center;
+    z-index: 2;
 }
 
 
@@ -20,22 +22,10 @@ body {
     width: 2vw; 
     top: 20vh;
     left: 55vh;
-    animation-name: move2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    z-index: 0;
-    offset-path: path('M 12 82 C 82 12, 132 12, 192 82 S 302 152, 362 82');
-    transform: rotateY(180deg);
-}
-#nave3 {
-    position: absolute;
-    width: 2vw; 
-    top: 20vh;
-    left: 55vh;
     animation-name: move;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    z-index: 1;
+    z-index: 0;
     offset-path: path('M 12 82 C 82 12, 132 12, 192 82 S 302 152, 362 82');
     transform: rotateY(180deg);
 }
@@ -44,34 +34,41 @@ body {
     width: 2vw; 
     top: 17vh;
     left: 65vh;
-    animation-name: move;
+    animation-name: move2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    z-index: 0;
+    z-index: 1;
     offset-path: path('M 10 80 C 80 10, 130 10, 190 80 S 300 150, 360 80');
     transform: rotateY(180deg);
     offset-distance: -5%; 
 }
+#meteoro{
+    position: absolute;
+    width: 1vh;
+    top: 25.2vh;
+    animation-name: meteoro;
+    animation-duration: 3.1s;
+    animation-iteration-count: 1;
+    z-index: 0;
+}
 
-#palanca{
-    width: 10vh;
+#boton{
     position: absolute;
-    left: 80vh;
-    top: 94vh;
+    top: 76.2vh;
+    left: 47.5vh;
 }
-#palanca2{
-    width: 5vh;
-    position: absolute;
-    left: 80vh;
-    transform: rotateY(180deg);
-    top: 86vh;
+
+#boton:active #nave3{
+    opacity: 0;
 }
-#palanca2:hover{
-    width: 5vh;
-    transform: rotateY(0deg);
-    position: absolute;
-    left: 85vh;
-    top: 86vh;
+#boton:active #nave2{
+    opacity: 0;
+}
+#boton:active {
+    filter: brightness(1.75); 
+    zoom: 10%;  
+    top: 810.2vh;
+    left: 508vh;
 }
 
 #planeta1,#planeta2,#planeta3{
@@ -113,6 +110,18 @@ body {
         offset-distance: 100%;
     }
 }
+@keyframes meteoro {
+    0% {
+        left: 0vh;z-index: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        left: 110.5vh;z-index: 0;
+        opacity: 1;
+    }
+}
 @keyframes move2 {
     0% {
         offset-distance: 0%;
@@ -120,7 +129,10 @@ body {
     75%{
         opacity: 1;
     }
-    76%{
+    84%{
+        opacity: 1;
+    }
+    85%{
         opacity: 0;
     }
     100% {

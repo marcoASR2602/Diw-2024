@@ -18,17 +18,15 @@ body{
     display: flex;
 }
 .carta{
-    width:  250px;
-    height: 348px;
+    width: 180px;
+    height:250px;
 }
 .carta div{
-    width:  250px;
-    height: 348px;
+    width: 180px;
+    height:250px;
     background-size: contain;
     position: absolute;
 }
-
-
 
 .reverso{
     background-image: url("img/back.png");
@@ -61,8 +59,6 @@ body{
     background-image: url("img/bulbasaur.png");
 }
 
-
-
 .carta div{
     transition: all 1s;
 }
@@ -75,11 +71,11 @@ body{
     transform: rotateY(0deg);
 }
 
-.carta:hover .anverso{
+.carta.seleccionada .anverso{
     z-index: 10;
     transform: rotateY(0deg);
 }
-.carta:hover .reverso{
+.carta.seleccionada .reverso{
     z-index: 0;
     transform: rotateY(180deg);
 }

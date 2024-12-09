@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">𝙼𝙰𝚁𝙲𝙾 𝙰𝙽𝚃𝙾𝙽𝙸𝙾</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link resumen" href="#about">RESUMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link proyecto" href="#projects">PROYECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link formacion" href="#contact">FORMACION</a>
+                    </li>
+                    <li class="nav-item vosotros">
+                      <a class="nav-link" href="#contact">SOBRE MI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-center">
+        <div class="container texto">
+            <h2>No es lo que logras, es lo que superas. Eso es lo que define tu carrera.</h1>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Resumen</h2>
+            <p class="text-center">I am a passionate developer with a love for creating beautiful and functional web applications.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2022/08/MAUI-Animation.gif" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">PROYECTOS</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://b1763018.smushcdn.com/1763018/wp-content/uploads/2018/01/diseno-grafico-mitos-disenador-grafico-working.gif?lossy=1&strip=1&webp=1" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">FORMACION</h5>
+                            <p class="card-text">Description of Project 2.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://cdn.dribbble.com/users/330915/screenshots/6554409/1_new_condo.gif" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">SOBRE MI</h5>
+                            <p class="card-text">Description of Project 3.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Mi Portfolio | Marco Antonio </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
